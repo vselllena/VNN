@@ -1,10 +1,27 @@
+"use client";
+
+import { useLanguage } from "../contexts/LanguageContext";
+
 export function IntroText() {
+  const { language } = useLanguage();
+
+  const translations = {
+    en: {
+      title: "VNN DESIGN",
+      subtitle: "Your Personal Master Tailor For All your Alterations",
+    },
+    bg: {
+      title: "ВНН ДИЗАЙН",
+      subtitle: "Вашият личен майстор шивач за всички ваши корекции",
+    },
+  };
+
+  const t = translations[language];
+
   return (
     <div className="flex flex-col items-center justify-center text-white">
-      <div className="text-4xl font-bold text-center">VNN DESIGN</div>
-      <span className="mt-2 text-lg text-center">
-        Your Personal Master Tailor For All your Alterations
-      </span>
+      <div className="text-4xl font-bold text-center">{t.title}</div>
+      <span className="mt-2 text-lg text-center">{t.subtitle}</span>
     </div>
   );
 }
