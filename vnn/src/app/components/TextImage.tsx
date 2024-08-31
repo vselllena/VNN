@@ -27,9 +27,13 @@ export default function TextImage() {
   return (
     <div className="flex flex-col items-center justify-between w-full px-10 mx-auto mt-4 lg:mt-0 lg:py-12 lg:px-20 lg:flex-row">
       <div className="w-full lg:w-1/2 lg:pr-8">
-        <h2 className="mb-4 text-2xl font-bold lg:text-3xl">{t.title}</h2>
-        <p className="mb-4 text-xl italic">{t.subtitle}</p>
-        <p className="mb-4 text-md lg:text-lg lg:mb-0">{t.description}</p>
+        <h2 className="mb-4 text-2xl font-bold lg:text-3xl font-serif">
+          {t.title}
+        </h2>
+        <p className="mb-4 text-xl italic font-sans">{t.subtitle}</p>
+        <p className="mb-4 text-md lg:text-lg lg:mb-0 font-sans">
+          {t.description}
+        </p>
       </div>
       <div className="w-full mb-8 lg:mb-0">
         <Image

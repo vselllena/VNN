@@ -34,9 +34,13 @@ export default function ImageText() {
         />
       </div>
       <div className="w-full lg:w-1/2 lg:pl-8">
-        <h2 className="mb-4 text-2xl font-bold lg:text-3xl">{t.title}</h2>
-        <p className="mb-4 text-xl italic">{t.subtitle}</p>
-        <p className="mb-4 text-md lg:text-lg lg:mb-0">{t.description}</p>
+        <h2 className="mb-4 text-2xl font-bold lg:text-3xl font-serif">
+          {t.title}
+        </h2>
+        <p className="mb-4 text-xl font-sans italic">{t.subtitle}</p>
+        <p className="mb-4 text-md font-sans lg:text-lg lg:mb-0">
+          {t.description}
+        </p>
       </div>
     </div>
   );

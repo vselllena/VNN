@@ -22,14 +22,14 @@ export default function Header() {
 
   return (
     <div className="flex flex-row items-center justify-between px-20 py-10 text-black bg-white">
-      <Link href="/" className="text-3xl font-bold">
+      <Link href="/" className="text-3xl font-bold font-serif">
         VNN DESIGN
       </Link>
       <div className="flex flex-row items-center space-x-4">
-        <Link href="/" className="hover:underline">
+        <Link href="/" className="hover:underline font-sans">
           {t.home}
         </Link>
-        <Link href="/contact" className="hover:underline">
+        <Link href="/contact" className="hover:underline font-sans">
           {t.contact}
         </Link>
         <LanguageSwitcher />
