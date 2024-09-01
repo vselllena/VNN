@@ -9,16 +9,18 @@ export default function ImageText() {
 
   const translations = {
     en: {
-      title: "TAILORING AT ITS BEST",
-      subtitle: "More than 40 years of Fast & Professional Service",
-      description:
-        "tailoring.studio is run and operated by Ruby, a master tailor with more than 40 years of continued experience from all types of custom tailoring and alterations. Following many years of distinguished service for various high-end retailers in Portland, Oregon, Ruby decided to finally establish her own business and to help her clients with all their fine custom fitting projects.",
+      title: "Opening Hours",
+      subtitle: "Feel free to call and share your inspiration!",
+      description: "Mon - Fri: 8am - 5pm",
+      callButton: "Get in touch",
+      phoneNumber: "+359898385058",
     },
     bg: {
-      title: "ШИВАШКО ИЗКУСТВО В НАЙ-ДОБРАТА СИ ФОРМА",
-      subtitle: "Повече от 40 години бърза и професионална услуга",
-      description:
-        "tailoring.studio се управлява от Руби, майстор шивач с повече от 40 години непрекъснат опит във всички видове персонализирано шиене и корекции. След много години отличителна служба за различни луксозни търговци на дребно в Портланд, Орегон, Руби реши най-накрая да създаде собствен бизнес и да помогне на клиентите си с всички техни проекти за фино персонализирано прилягане.",
+      title: "Работно време",
+      subtitle: "Можете да се свържете с нас по всяко време!",
+      description: "Понеделник - Петък: 8:00 - 17:00",
+      callButton: "Свържи се с нас",
+      phoneNumber: "+359898385058",
     },
   };
 
@@ -33,14 +35,20 @@ export default function ImageText() {
           className="object-cover rounded-lg"
         />
       </div>
-      <div className="w-full lg:w-1/2 lg:pl-8">
+      <div className="w-full lg:w-1/2 mx-auto flex items-center justify-center flex-col text-left">
         <h2 className="mb-4 text-2xl font-bold lg:text-3xl font-serif">
           {t.title}
         </h2>
         <p className="mb-4 text-xl font-sans italic">{t.subtitle}</p>
-        <p className="mb-4 text-md font-sans lg:text-lg lg:mb-0">
+        <p className="mb-4 mt-5 text-md font-sans lg:text-lg lg:mb-0">
           {t.description}
         </p>
+        <a
+          href={`tel:${t.phoneNumber}`}
+          className="mt-10 inline-block px-6 py-3 text-md font-sans lg:text-lg lg:mb-0 text-white bg-gray-700 rounded-md hover:bg-gray-600 transition duration-300"
+        >
+          {t.callButton}
+        </a>
       </div>
     </div>
   );

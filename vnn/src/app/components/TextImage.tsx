@@ -9,16 +9,16 @@ export default function TextImage() {
 
   const translations = {
     en: {
-      title: "TAILORING AT ITS BEST",
+      title: "Experience Excellence with VNN Design",
       subtitle: "More than 40 years of Fast & Professional Service",
       description:
-        "tailoring.studio is run and operated by Ruby, a master tailor with more than 40 years of continued experience from all types of custom tailoring and alterations. Following many years of distinguished service for various high-end retailers in Portland, Oregon, Ruby decided to finally establish her own business and to help her clients with all their fine custom fitting projects.",
+        "VNN Design is a boutique tailoring studio that combines finesse, tradition, and quality. It is focused on two core values: creativity and a designer experience. Our goal is to satisfy even the smallest expectation by crafting each product with care. VNN Design is run and operated by Valentina, a master tailor with more than 40 years of continued experience from all types of custom tailoring.",
     },
     bg: {
-      title: "ШИВАШКО ИЗКУСТВО В НАЙ-ДОБРАТА СИ ФОРМА",
-      subtitle: "Повече от 40 години бърза и професионална услуга",
+      title: "Изживейте съвършенство с VNN Design",
+      subtitle: "Богат опит и професионализъм от повече от 30 години",
       description:
-        "tailoring.studio се управлява от Руби, майстор шивач с повече от 40 години непрекъснат опит във всички видове персонализирано шиене и корекции. След много години отличителна служба за различни луксозни търговци на дребно в Портланд, Орегон, Руби реши най-накрая да създаде собствен бизнес и да помогне на клиентите си с всички техни проекти за фино персонализирано прилягане.",
+        "VNN Design е бутиково шивашко ателие, което съчетава финес, традиция и качество. Фокусиран е върху две основни ценности: креативност и дизайнерско изживяване. Нашата цел е да задоволим и най-малкото очакване, като изработваме внимателно всеки продукт. VNN Design се ръководи и управлява от Валентина, майстор шивач с повече от 40 години продължителен опит във всички видове шивашки услуги по поръчка.",
     },
   };
 
