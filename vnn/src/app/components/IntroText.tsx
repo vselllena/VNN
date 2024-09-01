@@ -8,11 +8,11 @@ export function IntroText() {
   const translations = {
     en: {
       title: "VNN DESIGN",
-      subtitle: "Your Personal Master Tailor For All your Alterations",
+      subtitle: "Your Personal Master Tailor in the heart of Sofia",
     },
     bg: {
       title: "ВНН ДИЗАЙН",
-      subtitle: "Вашият личен майстор шивач за всички ваши корекции",
+      subtitle: "Вашият личен майстор шивач в сърцето на София",
     },
   };
 
@@ -21,7 +21,7 @@ export function IntroText() {
   return (
     <div className="flex flex-col items-center justify-center text-white">
       <div className="font-serif text-4xl font-bold text-center">{t.title}</div>
-      <span className="font-sans mt-2 text-lg text-center">{t.subtitle}</span>
+      <span className="font-sans mt-2 text-base text-center">{t.subtitle}</span>
     </div>
   );
 }
