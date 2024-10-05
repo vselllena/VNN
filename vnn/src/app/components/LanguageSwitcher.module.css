@@ -1,0 +1,62 @@
+.toggleContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleLabel {
+  display: block;
+  width: 62px;
+  height: 30px;
+  background-color: #acacac;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 26px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s;
+}
+
+.toggleInput:checked + .toggleLabel .toggleButton {
+  transform: translateX(30px);
+}
+
+.toggleText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(27, 26, 26);
+  transition: opacity 0.3s;
+}
+
+.enText {
+  left: 8px;
+  opacity: 1;
+}
+
+.bgText {
+  right: 8px;
+  opacity: 0.5;
+}
+
+.toggleInput:checked + .toggleLabel .enText {
+  opacity: 0.5;
+}
+
+.toggleInput:checked + .toggleLabel .bgText {
+  opacity: 1;
+}
