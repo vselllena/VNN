@@ -35,7 +35,7 @@ export default function ImageText() {
           className="object-cover rounded-lg"
         />
       </div>
-      <div className="w-full lg:w-1/2 mx-auto flex items-center justify-center flex-col text-left">
+      <div className="w-full lg:w-1/2 mx-auto flex items-center justify-center flex-col text-left md:pl-8">
         <h2 className="mb-4 text-2xl font-bold lg:text-3xl font-serif">
           {t.title}
         </h2>

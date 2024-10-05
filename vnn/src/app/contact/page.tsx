@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <div>
       <Header />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 pt-8">
         <h1 className="text-3xl font-bold mb-4">{t.title}</h1>
         <p className="mb-8">{t.description}</p>
         <Form />

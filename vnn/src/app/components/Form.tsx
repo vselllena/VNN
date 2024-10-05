@@ -53,7 +53,7 @@ export default function Form() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between w-full px-20 py-12 mx-auto text-black bg-white lg:flex-row">
+    <div className="flex flex-col items-center justify-between w-full px-5 md:px-20 py-12 mx-auto text-black bg-white lg:flex-row">
       <div className="w-full mb-4 lg:w-1/3 lg:mb-0 lg:ml-32">
         <h2 className="mb-6 text-3xl font-bold ">{t.title}</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
