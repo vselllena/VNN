@@ -25,7 +25,7 @@ export default function Header() {
       <Link href="/" className="text-2xl md:text-3xl font-bold font-serif">
         VNN DESIGN
       </Link>
-      <div className="flex flex-row items-center space-x-2 md:space-x-4">
+      <div className="flex flex-row items-center space-x-2 md:space-x-4 text-sm md:text-base">
         <Link href="/" className="hover:underline font-sans">
           {t.home}
         </Link>
