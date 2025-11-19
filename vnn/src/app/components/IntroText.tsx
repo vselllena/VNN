@@ -20,8 +20,8 @@ export function IntroText() {
 
   return (
     <div className="flex flex-col items-center justify-center text-white">
-      <div className="font-serif text-4xl font-bold text-center">{t.title}</div>
-      <span className="font-sans mt-2 text-base text-center">{t.subtitle}</span>
+      {/* <div className="font-serif text-4xl font-bold text-center">{t.title}</div> */}
+      {/* <span className="font-sans mt-2 text-base text-center">{t.subtitle}</span> */}
     </div>
   );
 }

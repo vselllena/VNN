@@ -10,12 +10,12 @@ export default function LanguageSwitcher() {
   useEffect(() => {
     const storedLanguage = localStorage.getItem("language");
     if (storedLanguage) {
-      setLanguage(storedLanguage as "en" | "bg");
+      setLanguage(storedLanguage as "bg" | "en");
     }
   }, []);
 
   const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "bg" : "en";
+    const newLanguage = language === "bg" ? "en" : "bg";
     setLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
   };
@@ -31,8 +31,8 @@ export default function LanguageSwitcher() {
       />
       <label htmlFor="language-toggle" className={styles.toggleLabel}>
         <span className={styles.toggleButton}></span>
-        <span className={`${styles.toggleText} ${styles.enText}`}>EN</span>
         <span className={`${styles.toggleText} ${styles.bgText}`}>БГ</span>
+        <span className={`${styles.toggleText} ${styles.enText}`}>EN</span>
       </label>
     </div>
   );
