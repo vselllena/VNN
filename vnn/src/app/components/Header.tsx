@@ -28,11 +28,11 @@ export default function Header() {
       >
         VNN DESIGN
       </Link>
-      <div className="absolute right-5 md:right-10 flex flex-row items-center justify-end space-x-2 md:space-x-4 text-sm">
-        <Link href="/" className="hover:underline font-sans">
+      <div className="absolute right-5 md:right-10 flex flex-row items-center font-thin justify-end space-x-2 md:space-x-4 text-xs">
+        <Link href="/" className="hover:underline italic font-sans">
           {t.home}
         </Link>
-        <Link href="/contact" className="hover:underline font-sans">
+        <Link href="/contact" className="hover:underline italic font-sans">
           {t.contact}
         </Link>
         <LanguageSwitcher />
