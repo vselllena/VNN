@@ -10,10 +10,12 @@ export default function Header() {
   const translations = {
     en: {
       home: "Home",
+      about: "About",
       contact: "Contact",
     },
     bg: {
       home: "Начало",
+      about: "За нас",
       contact: "Контакти",
     },
   };
@@ -32,6 +34,7 @@ export default function Header() {
         <Link href="/" className="hover:underline italic font-sans">
           {t.home}
         </Link>
+        <Link href="/about" className="hover:underline italic font-sans">{t.about}</Link>
         <Link href="/contact" className="hover:underline italic font-sans">
           {t.contact}
         </Link>
