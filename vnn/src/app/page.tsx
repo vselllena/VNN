@@ -9,7 +9,16 @@ import Form from "./components/Form";
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-white text-black">
+    <>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none font-bold fixed inset-x-0 top-1/3 z-50 flex justify-center px-6 md:px-10 mix-blend-difference"
+      >
+        <span className="text-[clamp(2.5rem,8vw,9rem)] font-serif uppercase tracking-[0.6em] text-white drop-shadow-lg text-center leading-tight transition-opacity duration-500">
+          VALENTINA NIKOLOVA
+        </span>
+      </div>
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-white text-black">
       <section className="snap-start snap-always min-h-screen flex flex-col">
         <Header />
         <div className="relative flex-1">
@@ -39,6 +48,7 @@ export default function Home() {
           &copy; 2024 VNN DESIGN, Inc. All rights reserved.
         </p>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
