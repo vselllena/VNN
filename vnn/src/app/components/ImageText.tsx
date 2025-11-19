@@ -27,7 +27,7 @@ export default function ImageText() {
   const t = translations[language];
 
   return (
-    <div className="flex flex-col items-center justify-between w-full px-10 py-5 mx-auto lg:py-12 lg:px-20 lg:flex-row">
+    <div className="flex flex-col items-center justify-between w-full px-10 py-5 mx-auto lg:py-12 lg:px-16 lg:flex-row">
       <div className="w-full pb-4 mb-8 md:mb-0 lg:pb-0">
         <Image
           src={studio}
