@@ -7,10 +7,8 @@ export default function Footer() {
 
   const translations = {
     en: {
-      title: "VNN Design",
-      description:
-        "Making the world a better place through constructing elegant clothes.",
-      contactUs: "Contact us:",
+      title: "VNN DESIGN",
+      contactUs: "CONTACT US",
       phone: "Tel: +359 898 385 058",
       email: "Email: valianikolowa@gmail.com",
       instagram: "Instagram: vnndesign",
@@ -18,10 +16,8 @@ export default function Footer() {
       copyright: "&copy; 2024 VNN Design, Inc. All rights reserved.",
     },
     bg: {
-      title: "VNN Design",
-      description:
-        "Правим света по-добро място чрез създаване на елегантни дрехи.",
-      contactUs: "Свържете се с нас:",
+      title: "VNN DESIGN",
+      contactUs: "СВЪРЖЕТЕ СЕ С НАС",
       phone: "Тел: +359 898 385 058",
       email: "Имейл: valianikolowa@gmail.com",
       instagram: "Инстаграм: vnndesign",
@@ -33,20 +29,15 @@ export default function Footer() {
   const t = translations[language];
 
   return (
-    <footer aria-labelledby="footer-heading" className="bg-black">
+    <footer aria-labelledby="footer-heading" className="bg-black text-gray-300">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-[110rem] px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div className="flex flex-col lg:flex-row justify-between">
-          <div className="space-y-8">
-            <span className="font-serif text-xl">{t.title}</span>
-            <p className="text-sm leading-6 max-w-xs text-gray-300 font-sans">
-              {t.description}
-            </p>
+      <div className="mx-auto max-w-[110rem] px-6 sm:pt-24 lg:px-8 lg:pt-20">
+        <div className="flex flex-col lg:flex-row space-x-10 justify-between items-center pb-10">
+            <span className="text-2xl md:text-5xl uppercase font-thin font-serif tracking-wide text-center">{t.title}</span>
             <div className="flex space-x-6"></div>
-          </div>
-          <div className="flex flex-col space-y-4 text-base">
+          <div className="flex flex-col space-y-4 text-xs">
             <span className="font-serif text-xl">{t.contactUs}</span>
             <span>
               Tel:{" "}
@@ -58,33 +49,31 @@ export default function Footer() {
               </a>
             </span>
             <span>
-              Email:{" "}
               <a
                 href="mailto:valianikolowa@gmail.com"
                 className="text-gray-300 hover:underline"
               >
-                valianikolowa@gmail.com
+                EMAIL
               </a>
             </span>
             <span>
-              Instagram:{" "}
               <a
                 href="https://www.instagram.com/vnndesign"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:underline"
+                className="text-gray-300 hover:underline "
               >
-                vnndesign
+                INSTAGRAM
               </a>
             </span>
             <span>{t.address}</span>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
-            &copy; 2024 VNN Design, Inc. All rights reserved.
+        <section className="snap-start snap-always py-2 border-t border-white/10 pt-2 flex items-center justify-center">
+          <p className="text-xs leading-5 text-center text-gray-300">
+            &copy; 2024 VNN DESIGN, Inc. All rights reserved.
           </p>
-        </div>
+        </section>
       </div>
     </footer>
   );
