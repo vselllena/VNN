@@ -40,15 +40,6 @@ export default function Footer() {
           <div className="flex flex-col space-y-4 text-xs">
             <span className="font-serif text-xl">{t.contactUs}</span>
             <span>
-              Tel:{" "}
-              <a
-                href="tel:+359898385058"
-                className="text-gray-300 hover:underline"
-              >
-                +359 898 385 058
-              </a>
-            </span>
-            <span>
               <a
                 href="mailto:valianikolowa@gmail.com"
                 className="text-gray-300 hover:underline"
@@ -64,6 +55,15 @@ export default function Footer() {
                 className="text-gray-300 hover:underline "
               >
                 INSTAGRAM
+              </a>
+            </span>
+            <span>
+              Tel:{" "}
+              <a
+                href="tel:+359898385058"
+                className="text-gray-300 hover:underline"
+              >
+                +359 898 385 058
               </a>
             </span>
             <span>{t.address}</span>
