@@ -2,18 +2,15 @@ import Image from "next/image";
 import Header from "./components/Header";
 
 import machineImage from "./machine.jpg";
-import { IntroText } from "./components/IntroText";
-import TextImage from "./components/TextImage";
-import ImageText from "./components/ImageText";
-import Form from "./components/Form";
 import studioImage from "./components/studio.webp";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
       <div
         aria-hidden="true"
-        className="pointer-events-none font-bold fixed inset-x-0 top-1/3 z-50 flex justify-center px-6 md:px-10 mix-blend-difference"
+        className="pointer-events-none font-bold fixed inset-x-0 top-1/2 -translate-y-1/2 z-50 flex items-center justify-center mix-blend-difference"
       >
         <span className="text-[clamp(2.5rem,8vw,9rem)] font-serif uppercase tracking-[0.6em] text-white drop-shadow-lg text-center leading-tight transition-opacity duration-500">
           VALENTINA NIKOLOVA
@@ -101,12 +98,7 @@ export default function Home() {
       <section className="snap-start snap-always min-h-screen flex items-center justify-center bg-white">
         <Form />
       </section> */}
-
-        <section className="snap-start snap-always h-10 flex items-center justify-center bg-gray-100">
-          <p className="text-xs leading-5 text-center text-gray-600">
-            &copy; 2024 VNN DESIGN, Inc. All rights reserved.
-          </p>
-        </section>
+      <Footer />
       </main>
     </>
   );
