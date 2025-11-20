@@ -17,17 +17,17 @@ export default function Home() {
         </span>
       </div>
       <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-white text-black">
-        <section className="snap-start snap-always min-h-screen flex flex-col">
         <Header />
-        <div className="relative flex-1">
-          <Image
-            src={machineImage}
-            alt="Tailoring machine"
-            className="w-full h-screen object-cover"
-            priority
-          />
-        </div>
-      </section>
+        <section className="snap-start snap-always min-h-screen flex flex-col">
+          <div className="relative flex-1">
+            <Image
+              src={machineImage}
+              alt="Tailoring machine"
+              className="w-full h-screen object-cover"
+              priority
+            />
+          </div>
+        </section>
 
         <section className="snap-start snap-always min-h-screen bg-[#f8f2ea] flex items-center">
         <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
