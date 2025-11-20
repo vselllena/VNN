@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <section className="snap-start snap-always py-2 border-t border-white/10 pt-2 flex items-center justify-center">
           <p className="text-xs leading-5 text-center text-gray-300">
-            &copy; 2024 VNN DESIGN, Inc. All rights reserved.
+            &copy; 2025 VNN DESIGN, Inc. All rights reserved.
           </p>
         </section>
       </div>
