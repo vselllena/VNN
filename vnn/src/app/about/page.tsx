@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-[#f7f6f4] text-black">
       <Header />
       <section className="px-6 md:px-16 lg:px-24 py-16 md:py-24 space-y-10">
         <div className="space-y-4 max-w-3xl">

@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="snap-start snap-always min-h-screen bg-[#f8f2ea] flex items-center">
+        <section className="snap-start snap-always min-h-screen bg-[#f7f6f4] flex items-center">
         <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_0.4fr] items-center">
             <div className="relative">
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         </section>
 
-        <section className="snap-start snap-always min-h-screen bg-[#f8f2ea] flex items-center">
+        <section className="snap-start snap-always min-h-screen bg-[#f7f6f4] flex items-center">
         <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_2fr] items-center">
             <div className="relative">

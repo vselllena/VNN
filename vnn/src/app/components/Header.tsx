@@ -1,5 +1,6 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -7,6 +8,24 @@ import ScrollRevealContainer from "./ScrollRevealContainer";
 
 export default function Header() {
   const { language } = useLanguage();
+  // const headerRef = useRef<HTMLDivElement | null>(null);
+
+  // useLayoutEffect(() => {
+  //   const updateHeaderHeight = () => {
+  //     if (!headerRef.current) return;
+  //     document.documentElement.style.setProperty(
+  //       "--header-height",
+  //       `${headerRef.current.offsetHeight}px`
+  //     );
+  //   };
+
+  //   updateHeaderHeight();
+  //   window.addEventListener("resize", updateHeaderHeight);
+
+  //   return () => {
+  //     window.removeEventListener("resize", updateHeaderHeight);
+  //   };
+  // }, []);
 
   const translations = {
     en: {
@@ -24,8 +43,11 @@ export default function Header() {
   const t = translations[language];
 
   return (
-    <ScrollRevealContainer className="sticky top-0 z-40 w-full bg-white shadow-sm">
-      <div className="relative flex items-center justify-start md:justify-center px-5 md:px-10 py-8 md:py-10 text-black bg-white">
+    <ScrollRevealContainer className="sticky top-0 z-40 w-full bg-[#f7f6f4] shadow-sm">
+      <div
+        // ref={headerRef}
+        className="relative flex items-center justify-start md:justify-center px-5 md:px-10 py-2 text-black bg-[#f7f6f4]"
+      >
         <Link
           href="/"
           className="text-2xl md:text-4xl font-thin font-serif tracking-wide text-center"
