@@ -16,7 +16,7 @@ export default function Home() {
           VALENTINA NIKOLOVA
         </span>
       </div>
-      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-white text-black">
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-[#f7f6f4] text-black">
         <Header />
         <section className="snap-start snap-always min-h-screen flex flex-col">
           <div className="relative flex-1">
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex flex-col gap-6">
-              <div className="overflow-hidden rounded-sm border border-black/5 bg-white p-6 shadow-lg">
+              <div className="overflow-hidden rounded-sm border border-black/5 p-6 shadow-lg">
                 <Image
                   src={studioImage}
                   alt="Blueprint sketch"
@@ -86,6 +86,10 @@ export default function Home() {
           </div>
         </div>
         </section>
+        <section className="snap-start snap-always min-h-screen flex items-center justify-center">
+          <div className="text-center text-5xl font-serif">We believe in thoughtful design that respects both the wearer and the craft.</div>
+        </section>
+        
 
         {/* <section className="snap-start snap-always min-h-screen flex items-center justify-center bg-white">
         <TextImage />
