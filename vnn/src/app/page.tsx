@@ -30,66 +30,98 @@ export default function Home() {
         </section>
 
         <section className="snap-start snap-always min-h-screen bg-[#f7f6f4] flex items-center">
-        <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_0.4fr] items-center">
-            <div className="relative">
-              <div className="overflow-hidden">
-                <Image
-                  src={machineImage}
-                  alt="Artisan at work"
-                  className="w-full h-full object-cover rounded-sm shadow-2xl"
-                  priority
-                />
+          <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_0.4fr] items-center">
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <Image
+                    src={machineImage}
+                    alt="Artisan at work"
+                    className="w-full h-full object-cover rounded-sm shadow-2xl"
+                    priority
+                  />
+                </div>
               </div>
-            </div>
-            <div className="relative flex flex-col gap-6">
-              <div className="overflow-hidden rounded-sm border border-black/5 p-6 shadow-lg">
-                <Image
-                  src={studioImage}
-                  alt="Blueprint sketch"
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative flex flex-col gap-6">
+                <div className="overflow-hidden rounded-sm border border-black/5 p-6 shadow-lg">
+                  <Image
+                    src={studioImage}
+                    alt="Blueprint sketch"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-sm uppercase tracking-[0.7em] text-gray-500 text-center">
+                  atelier 1773
+                </p>
               </div>
-              <p className="text-sm uppercase tracking-[0.7em] text-gray-500 text-center">
-                atelier 1773
-              </p>
             </div>
           </div>
-        </div>
         </section>
 
         <section className="snap-start snap-always min-h-screen bg-[#f7f6f4] flex items-center">
-        <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_2fr] items-center">
-            <div className="relative">
-              <div className="overflow-hidden">
-                <Image
-                  src={machineImage}
-                  alt="Artisan at work"
-                  className="w-full h-full object-cover rounded-sm shadow-2xl"
-                  priority
-                />
+          <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.06fr_2fr] items-center">
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <Image
+                    src={machineImage}
+                    alt="Artisan at work"
+                    className="w-full h-full object-cover rounded-sm shadow-2xl"
+                    priority
+                  />
+                </div>
               </div>
-            </div>
-            <div className="relative flex flex-col gap-6">
-              <div className="overflow-hidden rounded-sm border border-black/5 bg-white p-6 shadow-lg">
-                <Image
-                  src={studioImage}
-                  alt="Blueprint sketch"
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative flex flex-col gap-6">
+                <div className="overflow-hidden rounded-sm border border-black/5 bg-white p-6 shadow-lg">
+                  <Image
+                    src={studioImage}
+                    alt="Blueprint sketch"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-sm uppercase tracking-[0.7em] text-gray-500 text-center">
+                  atelier 1773
+                </p>
               </div>
-              <p className="text-sm uppercase tracking-[0.7em] text-gray-500 text-center">
-                atelier 1773
-              </p>
             </div>
           </div>
-        </div>
         </section>
+        <section className="snap-start snap-always min-h-screen flex items-center justify-center overflow-hidden relative">
+          <div className="absolute inset-0 w-full h-full">
+            <Image
+              src={studioImage}
+              alt="Blueprint sketch"
+              className="w-full h-full object-cover"
+              fill
+            />
+          </div>
+
+          <div className="relative w-full h-screen flex z-0">
+            <div className="relative w-1/3 h-full group overflow-hidden">
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                <span className="text-center text-sm uppercase tracking-[0.7em] font-serif">Located in Sofia, Bulgaria
+                </span>
+              </div>
+            </div>
+
+            <div className="relative w-1/3 h-full group overflow-hidden">
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                <span className="text-center text-sm uppercase tracking-[0.7em] font-serif">Founded in 1999</span>
+              </div>
+            </div>
+
+            <div className="relative w-1/3 h-full group overflow-hidden">
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                <span className="text-center text-sm uppercase tracking-[0.7em] font-serif">Made-to-measure collections</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="snap-start snap-always min-h-screen flex items-center justify-center">
           <div className="text-center text-5xl font-serif">We believe in thoughtful design that respects both the wearer and the craft.</div>
         </section>
-        
+
 
         {/* <section className="snap-start snap-always min-h-screen flex items-center justify-center bg-white">
         <TextImage />
@@ -102,7 +134,7 @@ export default function Home() {
       <section className="snap-start snap-always min-h-screen flex items-center justify-center bg-white">
         <Form />
       </section> */}
-      <Footer />
+        <Footer />
       </main>
     </>
   );
