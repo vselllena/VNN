@@ -32,7 +32,7 @@ export default function HoverableImageSections() {
 
       <div className="relative w-full h-screen flex z-0">
         <div
-          className="relative w-1/3 h-full overflow-hidden cursor-pointer"
+          className="relative w-1/3 h-full overflow-hidden"
           onMouseEnter={() => handleToggle(0)}
         >
           <div
@@ -47,7 +47,7 @@ export default function HoverableImageSections() {
         </div>
 
         <div
-          className="relative w-1/3 h-full overflow-hidden cursor-pointer"
+          className="relative w-1/3 h-full overflow-hidden"
           onMouseEnter={() => handleToggle(1)}
         >
           <div

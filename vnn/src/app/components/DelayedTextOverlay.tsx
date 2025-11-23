@@ -6,24 +6,24 @@ import gsap from "gsap";
 export default function DelayedTextOverlay() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0 });
+//   useEffect(() => {
+//     const ctx = gsap.context(() => {
+//       const tl = gsap.timeline({ delay: 0 });
 
-      tl.fromTo(
-        ".line-top",    
-        { y: -130, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.3, ease: "sine" }
-      ).fromTo(
-        ".line-bottom",
-        { y: -130, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.3, ease: "sine" },
-        "-=0.6"
-      );
-    }, containerRef);
+//       tl.fromTo(
+//         ".line-top",    
+//         { y: -130, opacity: 0 },
+//         { y: 0, opacity: 1, duration: 1.3, ease: "sine" }
+//       ).fromTo(
+//         ".line-bottom",
+//         { y: -130, opacity: 0 },
+//         { y: 0, opacity: 1, duration: 1.3, ease: "sine" },
+//         "-=0.6"
+//       );
+//     }, containerRef);
 
-    return () => ctx.revert();
-  }, []);
+//     return () => ctx.revert();
+//   }, []);
 
   return (
     <div
