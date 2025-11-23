@@ -5,6 +5,7 @@ import machineImage from "./machine.jpg";
 import studioImage from "./components/studio.webp";
 import Footer from "./components/Footer";
 import HoverableImageSections from "./components/HoverableImageSections";
+import FirstSectionHoverable from "./components/FirstSectionHoverable";
 
 export default function Home() {
   return (
@@ -19,16 +20,7 @@ export default function Home() {
       </div>
       <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-[#f7f6f4] text-black">
         <Header />
-        <section className="snap-start snap-always min-h-screen flex flex-col">
-          <div className="relative flex-1">
-            <Image
-              src={machineImage}
-              alt="Tailoring machine"
-              className="w-full h-screen object-cover"
-              priority
-            />
-          </div>
-        </section>
+        <FirstSectionHoverable />
 
         <section className="snap-start snap-always min-h-screen bg-[#f7f6f4] flex items-center">
           <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-10">
@@ -90,9 +82,11 @@ export default function Home() {
         <HoverableImageSections />
 
         <section className="snap-start snap-always min-h-screen flex items-center justify-center">
-          <div className="text-center text-5xl font-serif">We believe in thoughtful design that respects both the wearer and the craft.</div>
+          <div className="text-center text-5xl font-serif">
+            We believe in thoughtful design that respects both the wearer and
+            the craft.
+          </div>
         </section>
-
 
         {/* <section className="snap-start snap-always min-h-screen flex items-center justify-center bg-white">
         <TextImage />
