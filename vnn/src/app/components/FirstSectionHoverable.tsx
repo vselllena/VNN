@@ -13,7 +13,7 @@ export default function FirstSectionHoverable() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setInitialLoadComplete(true);
-    }, 1400);
+    }, 1600);
 
     return () => clearTimeout(timer);
   }, []);
