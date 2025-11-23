@@ -6,18 +6,12 @@ import studioImage from "./components/studio.webp";
 import Footer from "./components/Footer";
 import HoverableImageSections from "./components/HoverableImageSections";
 import FirstSectionHoverable from "./components/FirstSectionHoverable";
+import DelayedTextOverlay from "./components/DelayedTextOverlay";
 
 export default function Home() {
   return (
     <>
-      <div
-        aria-hidden="true"
-        className="pointer-events-none font-bold fixed inset-x-0 top-1/2 -translate-y-1/2 z-50 flex items-center justify-center mix-blend-difference"
-      >
-        <span className="text-[clamp(2.5rem,8vw,9rem)] font-serif uppercase tracking-[0.6em] text-white drop-shadow-lg text-center leading-tight transition-opacity duration-500">
-          VALENTINA NIKOLOVA
-        </span>
-      </div>
+      <DelayedTextOverlay />
       <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-[#f7f6f4] text-black">
         <Header />
         <FirstSectionHoverable />
