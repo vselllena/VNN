@@ -13,7 +13,7 @@ export default function Form() {
       fullName: "Full Name",
       email: "Email Address",
       phone: "Phone Number",
-      subject: "Subject",
+      subject: "Message",
       submit: "Submit",
     },
     bg: {
@@ -21,7 +21,7 @@ export default function Form() {
       fullName: "Пълно име",
       email: "Имейл адрес",
       phone: "Телефонен номер",
-      subject: "Тема",
+      subject: "Съобщение",
       submit: "Изпрати",
     },
   };
@@ -54,9 +54,20 @@ export default function Form() {
 
   return (
     <div className="flex flex-col items-center justify-between w-full px-5 md:px-20 py-12 mx-auto text-black bg-white lg:flex-row">
+      <div className="w-full pt-10 lg:w-1/2 lg:pt-0">
+        <Image
+          src={studio}
+          alt="Tailoring Fitting"
+          className="object-cover rounded-lg"
+        />
+      </div>
+
       <div className="w-full mb-4 lg:w-1/3 lg:mb-0 lg:ml-32">
-        <h2 className="mb-6 text-3xl font-bold ">{t.title}</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <h2 className="mb-16 text-6xl text-left font-thin font-serif">{t.title}</h2>
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-4 font-serif tracking-wide"
+        >
           <div>
             <label htmlFor="name" className="block mb-1">
               {t.fullName}
@@ -65,7 +76,7 @@ export default function Form() {
               type="text"
               id="name"
               name="name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
               required
             />
           </div>
@@ -77,7 +88,7 @@ export default function Form() {
               type="email"
               id="email"
               name="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
               required
             />
           </div>
@@ -89,7 +100,7 @@ export default function Form() {
               type="tel"
               id="phone"
               name="phone"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
               required
             />
           </div>
@@ -97,28 +108,20 @@ export default function Form() {
             <label htmlFor="subject" className="block mb-1">
               {t.subject}
             </label>
-            <input
-              type="text"
+            <textarea
               id="subject"
               name="subject"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border rounded-md h-24 border-gray-300 resize-none focus:outline-none focus:ring-0 focus:border-black"
               required
-            />
+            ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white transition duration-300 bg-black rounded-md hover:bg-black-700"
+            className="w-full px-4 py-2 font-mono text-sm tracking-wide text-white transition duration-300 bg-black hover:bg-black-700 rounded-md"
           >
             {t.submit}
           </button>
         </form>
-      </div>
-      <div className="w-full pt-10 lg:w-1/2 lg:pt-0">
-        <Image
-          src={studio}
-          alt="Tailoring Fitting"
-          className="object-cover rounded-lg"
-        />
       </div>
     </div>
   );
